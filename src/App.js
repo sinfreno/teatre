@@ -1,5 +1,14 @@
 import React from 'react';
 import Romeo from './Romeo.json';
+import styled from "styled-components";
+
+// Styled component phrase
+const StyledPhrase = styled.div`
+  font-size: 18px;
+  color: #123456;
+  font-style:italic;
+  margin-left: 15px;
+`;
 
 
 class App extends React.Component {
@@ -9,7 +18,7 @@ class App extends React.Component {
       {Romeo.map((item, index) => {
         return (
           <div>
-            <p>{item}</p>
+            <StyledPhrase>{item}</StyledPhrase>
           </div>
         );
       })}
